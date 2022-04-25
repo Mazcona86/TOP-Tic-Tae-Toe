@@ -1,0 +1,105 @@
+:root {
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-dark--3: #aaaeb1;
+  --color-light--1: #aaa;
+  --color-light--2: #f3f3f3;
+  --color-light--3: rgb(237, 240, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 2;
+  background-color: var(--color-light--2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* GENERAL */
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 60px;
+}
+
+.section__player-turn {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.section__gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-template-rows: repeat(3, 170px);
+  justify-content: center;
+  border: 5px solid var(--color-dark--1);
+}
+
+.section__field {
+  background-color: whitesmoke;
+  font-size: 6rem;
+  border: 2px solid var(--color-dark--1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.section__field:hover {
+  filter: brightness(80%);
+}
+
+.section:focus {
+  outline: none;
+}
+
+.section__restart-btn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.6rem 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-dark--3);
+  margin-bottom: 30px;
+}
+
+.section__restart-btn:hover {
+  filter: brightness(90%);
+}
+
+.footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: bold;
+  background-color: var(--color-light--1);
+}
