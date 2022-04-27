@@ -43,7 +43,8 @@ body {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  gap: 60px;
+  gap: 30px;
+  text-align: center;
 }
 
 .section__player-turn {
@@ -57,6 +58,11 @@ body {
   grid-template-rows: repeat(3, 170px);
   justify-content: center;
   border: 5px solid var(--color-dark--1);
+}
+
+.section__message {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .section__field {
@@ -76,6 +82,24 @@ body {
 
 .section:focus {
   outline: none;
+}
+
+.section__player-turn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.6rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-dark--3);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 30px;
+}
+
+.section__player-turn--selected {
+  background-color: black;
+  color: white;
 }
 
 .section__restart-btn {
