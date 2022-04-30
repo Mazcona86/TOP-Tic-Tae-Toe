@@ -127,3 +127,8 @@ body {
   font-weight: bold;
   background-color: var(--color-light--1);
 }
+
+.disableddiv {
+  pointer-events: none;
+  opacity: 0.9;
+}
