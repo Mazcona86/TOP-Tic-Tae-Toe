@@ -4,15 +4,15 @@ This a simple Tic - Tae - Toe game that I created using HTML, CSS and Javascript
 I learned a great deal out of this. To make this I tried to use several different tools that are available in the Javascript language to reinforce the knowledge that I have learned so far.
 
 Technologies:
-* HTML
-* CSS
-* Javascript
+* HTML.
+* CSS.
+* Javascript.
 
 Tools:
-* Visual Studio Code
-* Linux terminal use (via a Virtual Machine)
-* Git and GitHub
-* ESLint + Prettier
+* Visual Studio Code.
+* Linux terminal use (via a Virtual Machine).
+* Git and GitHub.
+* ESLint + Prettier.
 
 Outcome:
 * I improved my knowledge of Javascript and of the OOP concepts. 
