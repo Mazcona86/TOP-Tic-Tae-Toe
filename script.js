@@ -17,13 +17,11 @@ const displayController = (() => {
   function switchingPlayers() {
     if (this.currentPlayer === 'O') {
       this.currentPlayer = 'X';
-      _togglePlayers();
-      displayGameMessage.call(this, 'switch');
     } else {
       this.currentPlayer = 'O';
-      _togglePlayers();
-      displayGameMessage.call(this, 'switch');
     }
+    _togglePlayers();
+    displayGameMessage.call(this, 'switch');
   }
 
   function displayGameMessage(condition) {
@@ -128,7 +126,7 @@ const gameBoard = (() => {
     displayController.resetConditions();
   }
 
-  // To start the GAME
+  // To start the GAME!
   function init() {
     _renderGame();
   }
