@@ -19,5 +19,3 @@ Outcome:
 * I learned how to plan and organized my code, saving a lot of time.
 * I learned how to use the Revealing Module Pattern and how to make functions private.
 * I used CSS3 grid and flexbot to make the layout.
-
-This was a tough project and I had a challenging experience!
