@@ -15,11 +15,9 @@ const displayController = (() => {
   }
 
   function switchingPlayers() {
-    if (this.currentPlayer === 'O') {
-      this.currentPlayer = 'X';
-    } else {
-      this.currentPlayer = 'O';
-    }
+    this.currentPlayer === 'O'
+      ? (this.currentPlayer = 'X')
+      : (this.currentPlayer = 'O');
     _togglePlayers();
     displayGameMessage.call(this, 'switch');
   }
@@ -66,6 +64,7 @@ const gameBoard = (() => {
   const fieldBtn = document.querySelectorAll('.section__field');
   const restartBtn = document.querySelector('.section__restart-btn');
 
+  // Game main functionality
   function _renderGame() {
     for (const field of fieldBtn) {
       field.addEventListener('click', _render);
